@@ -141,91 +141,79 @@ public struct YPImagePickerConfiguration {
     
     /// Migration
 
-    @available(iOS, obsoleted: 3.0.0, renamed: "video.compression")
 public var videoCompression: String {
 get {
 return AVAssetExportPresetHighestQuality
 }
 }
     
-    @available(iOS, obsoleted: 3.0.0, renamed: "video.fileType")
 public var videoExtension: AVFileType {
     get {
         return .mov
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "video.recordingTimeLimit")
+
 public var videoRecordingTimeLimit: TimeInterval {
     get {
         return 60.0
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "video.libraryTimeLimit")
 public var videoFromLibraryTimeLimit: TimeInterval {
     get {
         return 60.0
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "video.minimumTimeLimit")
 public var videoMinimumTimeLimit: TimeInterval {
     get {
         return 3.0
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "video.trimmerMaxDuration")
 public var trimmerMaxDuration: Double {
     get {
         return 60.0
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "video.trimmerMinDuration")
 public var trimmerMinDuration: Double {
     get {
         return 3.0
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "library.onlySquare")
 public var onlySquareImagesFromLibrary: Bool {
     get {
         return false
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "library.onlySquare")
 public var onlySquareFromLibrary: Bool {
     get {
         return false
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "targetImageSize")
 public var libraryTargetImageSize: Any {
     get {
         return YPImageSize.original
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "library.mediaType")
 public var showsVideoInLibrary: Bool {
     get {
         return false
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "library.mediaType")
 public var libraryMediaType: Any {
     get {
         return YPlibraryMediaType.photo
     }
 }
  
-@available(iOS, obsoleted: 3.0.0, renamed: "library.maxNumberOfItems")
 public var maxNumberOfItems: Int {
     get {
         return 1
